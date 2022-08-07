@@ -1,0 +1,84 @@
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+    font: 20px Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+p{
+    font: 20px Arial, sans-serif;
+    text-align: justify;
+}
+
+/*TOPNAVIGATION*/
+/* The navbar container */
+.topNav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Navbar links */
+.topNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Links - change color on hover */
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.element {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side {
+    width: 25%;
+}
+.column.middle {
+    width: 45%;
+}
+.row{
+    content:"";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px){
+.column.side, .column.middle{
+    width: 100%;
+}
+}
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    transform: scale(1.01);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
