@@ -31,11 +31,12 @@ cardArray.sort(() => 0.5 - Math.random())
 //Methode is looking in the, document the html file , for the ID named grid
 const griddisplay = document.querySelector('#grid')
 const cardsChosen = []
+
 function createBoard () {
     for (let i = 0; i < cardArray.length*2; i++) {
         //Creates an element spezific here an image
         const card = document.createElement('img')
-        card.setAttribute('src','images/blank.png')
+        card.setAttribute('src','image/blank.png')
         card.setAttribute('data-id',i)
         //Just if 'click' an ivent is triggernt the funktion flipcard is called
         card.addEventListener('click', flipCard)
@@ -51,6 +52,7 @@ function checkMatch ()
 }
 
 function flipCard (){
+    console.log(cardArray)
     //Allows to interact with whatever element we click on to interact with and saving the data id in cardId
     const cardId = this.getAttribute('data-id')
     //Adds the click items into the new Array to later compare to
