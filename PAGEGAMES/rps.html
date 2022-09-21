@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.css">
+    <title>Rock Paper Scissors</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("../HEADER/header.html");
+            $("#footer").load("../FOOTER/footer.html");
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+
+<h2>Computer Choice: <span id="computer-choice"> </span></h2>
+<h2>User Choice: <span  id="user-choice"></span></h2>
+<h2>Result: <span id="result"> </span></h2>
+
+<button id="rock">rock</button>
+<button id="paper">paper</button>
+<button id="scissors">scissors</button>
+
+<script src="javascript/rps.js" charset="utf-8"></script>
+
+<div id="footer"></div>
+
+</body>
+</html>
